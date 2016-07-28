@@ -19,6 +19,7 @@ vulcanize --inline-css --inline-scripts --strip-comments public/imports.html > i
 ```
 
 
+
 ### Polymer Settings
 
 Create client/lib/settings.js
@@ -35,7 +36,7 @@ window.Polymer = {
 
 ###Directory structure
 
-![synth](https://cloud.githubusercontent.com/assets/6007432/16890239/5ce6756e-4b0a-11e6-8198-59fa2b8d6b08.png)
+![synth](https://cloud.githubusercontent.com/assets/6007432/17208165/f52a1aa0-54d4-11e6-85fe-f41fc1e2e5c9.png)
 
 you can add js in separate file or you can add it inside the element html file using script tag.
 
@@ -162,6 +163,7 @@ bower.json
 ```
 
 
+
 ### Docs
 
 Use meteor data reactively inside polymer components - https://github.com/meteorwebcomponents/mixin/blob/master/README.md
@@ -191,6 +193,7 @@ https://forums.meteor.com/t/polymer-meteor-with-meteor-webcomponents-packages/20
 
 
 [MWC Layout](https://github.com/meteorwebcomponents/layout) - polymer layout renderer . Added using bower.
+
 
 
 
