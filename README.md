@@ -20,6 +20,7 @@ vulcanize --inline-css --inline-scripts --strip-comments public/imports.html > i
 
 
 
+
 ### Polymer Settings
 
 Create client/lib/settings.js
@@ -81,8 +82,6 @@ body{
 ....
 
 ```
-
-Refer (app-route)[https://github.com/PolymerElements/app-route] for more info.
 
 ```js
 //imports/ui/layouts/test-layout.js
@@ -155,33 +154,15 @@ bower.json
 
 Use meteor data reactively inside polymer components - https://github.com/meteorwebcomponents/mixin/blob/master/README.md
 
-Reactively route polymer projects with flowrouter - https://github.com/meteorwebcomponents/router/blob/master/README.md
-
-How to render polymer elements with mwc:layout - https://github.com/meteorwebcomponents/layout/blob/master/README.md
-
-
-
-
+Refer (app-route)[https://github.com/PolymerElements/app-route] for info regarding routing
 
 ### Forum 
 
 https://forums.meteor.com/t/polymer-meteor-with-meteor-webcomponents-packages/20536
-
-
-
 
 ### MWC packages included.
 
 [mwc:synthesis](https://github.com/meteorwebcomponents/synthesis) -  Synthesis is meteor + polymer.
 
 [mwc:mixin](https://github.com/meteorwebcomponents/mixin) -  Polymer data package
-
-[mwc:router](https://github.com/meteorwebcomponents/router) - Flowrouter with polymer
-
-
-[MWC Layout](https://github.com/meteorwebcomponents/layout) - polymer layout renderer . Added using bower.
-
-
-
-
 
