@@ -73,13 +73,13 @@ body{
 
 <!-- imports/ui/layout/test-layout.html -->
 
-....
+...
 
     <app-location route="{{route}}"></app-location>
 
     <app-route route="{{route}}" pattern="/:page" data="{{routeData}}"></app-route>
 
-....
+...
 
 ```
 
