@@ -4,13 +4,26 @@
 
 ## Usage
 
-### Running
+### Installation.
+
+#### Clone the repo 
+```sh
+git clone git@github.com:clayip/meteor-polymer-boilerplate.git your-app-folder
+```
+(change remote url)[https://help.github.com/articles/changing-a-remote-s-url/].
+
+#### Updating imports/ui/build.html
+
+install bower components
+
+```sh
+bower install
+```
 
 vulcanize the public/imports.html file to build.html before starting meteor
 
 ```sh
 vulcanize --inline-css --inline-scripts --strip-comments public/imports.html > imports/ui/build.html && meteor
-
 ```
  or run the run shell file kept in root folder
 
@@ -18,8 +31,12 @@ vulcanize --inline-css --inline-scripts --strip-comments public/imports.html > i
 ./run.sh
 ```
 
+### Running
 
-
+```sh
+cd your-app-folder #enters folder
+meteor
+```
 
 ### Polymer Settings
 
