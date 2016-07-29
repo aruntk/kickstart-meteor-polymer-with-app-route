@@ -34,7 +34,7 @@ window.Polymer = {
 };
 ```
 
-###Directory structure
+### Directory structure
 
 ![synth](https://cloud.githubusercontent.com/assets/6007432/17208165/f52a1aa0-54d4-11e6-85fe-f41fc1e2e5c9.png)
 
@@ -69,11 +69,19 @@ body{
 ####Routing . 
 
 ```html
+
+<!-- imports/ui/layout/test-layout.html -->
+
+....
+
     <app-location route="{{route}}"></app-location>
 
     <app-route route="{{route}}" pattern="/:page" data="{{routeData}}"></app-route>
 
+....
+
 ```
+
 Refer (app-route)[https://github.com/PolymerElements/app-route] for more info.
 
 ```js
@@ -88,7 +96,7 @@ Polymer({
     this.changeStatus();
   },
   changeStatus(){
-    this.set("appState",`Page : ${this.routeData.page} , Status : ${Meteor.status().status}`);
+    this.set("appState",`Page : ${this.routeData.page || 'home'} , Status : ${Meteor.status().status}`);
     if(!Meteor.isCordova){
       this.notCordova = true;
     }
@@ -99,7 +107,7 @@ Polymer({
       type: Object,
       value: function() {
         return {
-          page: 'home'
+          page: ''
         };
       }
     },
@@ -115,34 +123,12 @@ Polymer({
   },
   home:function(){
 
-    this.set("routeData.page", "home"); 
+    this.set("routeData.page", ""); 
   }
 });
 
 
 ```
-
-```html
-<!-- imports/ui/layout/test-layout.html -->
-<link rel="import" href="../components/test-element.html">
-<dom-module id="test-layout">
-  <style>
-  /*style goes here */
-    ... 
-    
-  </style>
-  <template>
-    <paper-header-panel class="fit layout">
-    
-     ...
-     
-    </paper-header-panel>
-  </template>
-</dom-module>
-
-```
-
-
 
 bower_components are kept inside public/bower_components folder.
 
@@ -161,6 +147,7 @@ bower.json
   "version": "0.0.1"
 }
 ```
+
 
 
 
@@ -193,6 +180,7 @@ https://forums.meteor.com/t/polymer-meteor-with-meteor-webcomponents-packages/20
 
 
 [MWC Layout](https://github.com/meteorwebcomponents/layout) - polymer layout renderer . Added using bower.
+
 
 
 
