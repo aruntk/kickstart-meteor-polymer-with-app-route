@@ -7,7 +7,7 @@ Polymer({
     this.changeStatus();
   },
   changeStatus(){
-    this.set("appState",`Page : ${this.routeData.page} , Status : ${Meteor.status().status}`);
+    this.set("appState",`Page : ${this.routeData.page || 'home'} , Status : ${Meteor.status().status}`);
     if(!Meteor.isCordova){
       this.notCordova = true;
     }
@@ -18,7 +18,7 @@ Polymer({
       type: Object,
       value: function() {
         return {
-          page: 'home'
+          page: ''
         };
       }
     },
@@ -34,7 +34,7 @@ Polymer({
   },
   home:function(){
 
-    this.set("routeData.page", "home"); 
+    this.set("routeData.page", ""); 
   }
 });
 
