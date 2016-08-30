@@ -18,6 +18,7 @@ Polymer({
       value:true
     }
   },
+  behaviors:[mwcMixin],
   showNickName:function(){
     this.nndHidden = !this.nndHidden;
     this.show = this.nndHidden ? "show" : "hide";

@@ -3,15 +3,6 @@ import './test-layout.html';
 Polymer({
   is:"test-layout",
   behaviors:[mwcMixin],
-  tracker:function(){
-    this.changeStatus();
-  },
-  changeStatus(){
-    this.set("appState",`Page : ${this.routeData.page || 'home'} , Status : ${Meteor.status().status}`);
-    if(!Meteor.isCordova){
-      this.notCordova = true;
-    }
-  },
   properties:{
     route:Object,
     routeData:{
@@ -28,7 +19,14 @@ Polymer({
     notCordova:Boolean
 
   },
-  observers:["changeStatus(routeData.page)"],
+  trackers:["changeStatus(routeData.page)"],
+  changeStatus:function(page){
+    this.set("appState",`Page : ${page || 'home'} , Status : ${Meteor.status().status}`);
+    if(!Meteor.isCordova){
+      this.notCordova = true;
+    }
+  },
+
   second:function(){
     this.set("routeData.page", "second"); 
   },
