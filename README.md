@@ -133,7 +133,7 @@ Polymer({
     notCordova:Boolean
 
   },
-  observers:["changeStatus(routeData.page)"],
+  trackers:["changeStatus(routeData.page)"],
   second:function(){
     this.set("routeData.page", "second"); 
   },
