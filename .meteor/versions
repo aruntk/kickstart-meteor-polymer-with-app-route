@@ -9,7 +9,6 @@ blaze@2.1.9
 blaze-tools@1.0.10
 boilerplate-generator@1.0.10
 caching-compiler@1.1.7_1
-caching-html-compiler@1.0.7
 callback-hook@1.0.9
 check@1.2.3
 ddp@1.2.5
@@ -46,8 +45,8 @@ modules-runtime@0.7.6_1
 mongo@1.1.12_5
 mongo-id@1.0.5
 mwc:mixin@1.0.30
-mwc:synthesis@1.0.41
-mwc:synthesis-compiler@1.0.39
+mwc:synthesis@1.0.42
+mwc:synthesis-js@0.6.0
 npm-mongo@2.2.10_1
 observe-sequence@1.0.13
 ordered-dict@1.0.8
@@ -62,7 +61,6 @@ spacebars@1.0.13
 spacebars-compiler@1.0.13
 standard-minifier-css@1.2.1
 standard-minifier-js@1.2.0_1
-templating-tools@1.0.5
 tracker@1.1.0
 ui@1.0.12
 underscore@1.0.9

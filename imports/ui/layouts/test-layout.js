@@ -1,8 +1,6 @@
-import './test-layout.html';
-
 Polymer({
   is:"test-layout",
-  behaviors:[mwcMixin],
+  behaviors:[window.mwcMixin],
   properties:{
     route:Object,
     routeData:{

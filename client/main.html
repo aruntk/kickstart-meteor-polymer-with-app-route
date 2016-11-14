@@ -1,14 +1,23 @@
-<html>
-  <head>
-    <title>Synthesis</title>
-    <style>
+<head>
+  <title>Synthesis</title>
+  <link rel="import" href="/imports/ui/imports.html">
+  <!--<link rel="import" href="/imports/ui/mwc-mixin.html">-->
+  <!--<link rel="import" href="/imports/ui/layouts/test-layout.html">-->
+
+  <style>
 body{
   padding:0px;
   margin:0px;
 }
-    </style>
-  </head>
-  <body class="fullbleed">
-    <test-layout></test-layout>
-  </body>
-</html>
+  </style>
+</head>
+<body class="fullbleed">
+  <test-layout></test-layout>
+  <script>
+window.addEventListener('WebComponentsReady', function(e) {
+  Polymer.Base.importHref('imports/ui/mwc-mixin.html');
+  Polymer.Base.importHref('imports/ui/layouts/test-layout.html');
+});
+  </script>
+
+</body>
