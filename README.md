@@ -12,32 +12,19 @@ git clone git@github.com:clayip/meteor-polymer-boilerplate.git your-app-folder
 ```
 (change remote url)[https://help.github.com/articles/changing-a-remote-s-url/].
 
-#### Updating imports/ui/build.html
 
-install bower components
+#### Building
 
+Type the following in shell. Script install bower components and npm packages.
 ```sh
-bower install
+#shell
+cd your-app-folder
+./build.sh
 ```
-
-vulcanize the public/imports.html file to build.html before starting meteor
-
-```sh
-vulcanize --inline-css --inline-scripts --strip-comments public/imports.html > imports/ui/build.html && meteor
-```
- or run the run shell file kept in root folder
-
-```sh
-./run.sh
-```
-
 ### Running
-
 ```sh
-cd your-app-folder #enters folder
 meteor
 ```
-
 ### Polymer Settings
 
 Create client/lib/settings.js
@@ -51,6 +38,7 @@ window.Polymer = {
   lazyRegister: true
 };
 ```
+
 
 ### Directory structure
 
@@ -164,9 +152,6 @@ bower.json
 }
 ```
 
-
-
-
 ### Docs
 
 Use meteor data reactively inside polymer components - https://github.com/meteorwebcomponents/mixin/blob/master/README.md
@@ -182,4 +167,3 @@ https://forums.meteor.com/t/polymer-meteor-with-meteor-webcomponents-packages/20
 [mwc:synthesis](https://github.com/meteorwebcomponents/synthesis) -  Synthesis is meteor + polymer.
 
 [mwc:mixin](https://github.com/meteorwebcomponents/mixin) -  Polymer data package
-
