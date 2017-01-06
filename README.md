@@ -12,8 +12,6 @@ git clone git@github.com:aruntk/kickstart-meteor-polymer-with-app-route.git your
 ```
 [change remote url](https://help.github.com/articles/changing-a-remote-s-url/).
 
-
-
 #### Building
 
 Type the following in shell. Script install bower components and npm packages.
@@ -48,9 +46,19 @@ window.Polymer = {
   lazyRegister: true
 };
 ```
+### Offline First
 
+Service worker caching is enabled in this app. [client/main.js](client/main.js)
 
+This will cache all your assets, js, html, css etc.
 
+What this wont do - It'll not cache db data. 
+
+To do this there are two methods
+
+1. Minimongo caching - Use [ground:db](https://github.com/GroundMeteor/db)
+
+2. Use [iron-local-storage](https://elements.polymer-project.org/elements/iron-localstorage)
 ### Directory structure
 
 ![synth](https://cloud.githubusercontent.com/assets/6007432/17208165/f52a1aa0-54d4-11e6-85fe-f41fc1e2e5c9.png)
