@@ -59,6 +59,7 @@ To do this there are two methods
 1. Minimongo caching - Use [ground:db](https://github.com/GroundMeteor/db)
 
 2. Use [iron-local-storage](https://elements.polymer-project.org/elements/iron-localstorage)
+
 ### Directory structure
 
 ![synth](https://cloud.githubusercontent.com/assets/6007432/17208165/f52a1aa0-54d4-11e6-85fe-f41fc1e2e5c9.png)
@@ -91,7 +92,7 @@ body{
     <test-layout></test-layout>
   </body>
 ```
-####Routing . 
+#### Routing . 
 
 ```html
 
