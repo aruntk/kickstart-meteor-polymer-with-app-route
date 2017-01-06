@@ -62,7 +62,7 @@ To do this there are two methods
 
 2. Use [iron-local-storage](https://elements.polymer-project.org/elements/iron-localstorage)
 
-** To check this feature **
+To check this feature
 
 1. Browser console -> Network tab -> check offline -> Reload window
 2. Open the app in mobile chrome browser. Select settings -> add to home screen. Go to home screen and click on the mwc icon.
