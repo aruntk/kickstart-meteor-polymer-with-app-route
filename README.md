@@ -1,3 +1,5 @@
+> Checkout this branch for meteor + polymer 2.0 kickstarter app. https://github.com/aruntk/kickstart-meteor-polymer-with-app-route/tree/2.0-preview
+
 # Synthesis is meteor + polymer
 
 ![synthesis1](https://cloud.githubusercontent.com/assets/6007432/14216652/9da7131a-f867-11e5-9f84-6dd75d60dd45.gif)
