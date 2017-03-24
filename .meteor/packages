@@ -19,7 +19,7 @@ ecmascript@0.6.3              # Enable ECMAScript2015+ syntax in app code
 
 autopublish@1.0.7             # Publish all data to the clients (for prototyping)
 insecure@1.0.7                # Allow all DB writes from clients (for prototyping)
-mwc:synthesis@2.0.0-beta
+mwc:synthesis
 mwc:mixin
 shell-server@0.2.2
 mwc:synthesis-assets
