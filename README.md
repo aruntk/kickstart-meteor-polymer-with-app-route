@@ -1,3 +1,5 @@
+> Demo using meteor dynamic import https://github.com/aruntk/kickstart-meteor-polymer-with-app-route/tree/dynamic-import
+
 > Checkout this branch for meteor + polymer 2.0 kickstarter app. https://github.com/aruntk/kickstart-meteor-polymer-with-app-route/tree/2.0-preview
 
 # Synthesis is meteor + polymer
