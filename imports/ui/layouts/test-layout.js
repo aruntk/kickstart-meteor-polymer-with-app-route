@@ -1,6 +1,6 @@
 Polymer({
   is:"test-layout",
-  // behaviors:[mwcMixin],
+  behaviors:[mwcMixin],
   properties:{
     route:Object,
     routeData:{
@@ -17,8 +17,7 @@ Polymer({
     notCordova:Boolean
 
   },
-  // trackers:["changeStatus(routeData.page)"],
-  observers:["changeStatus(routeData.page)"],
+  trackers:["changeStatus(routeData.page)"],
   changeStatus:function(page){
     this.set("appState",`Page : ${page || 'home'} , Status : ${Meteor.status().status}`);
     if(!Meteor.isCordova){
