@@ -1,3 +1,5 @@
+import mwcMixin from '../mixin';
+
 Polymer({
   is:"test-element",
   properties:{
