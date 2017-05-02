@@ -19,7 +19,7 @@ Polymer({
     }
   },
   // TODO Mixin does not work
-  // behaviors:[mwcMixin],
+  behaviors:[mwcMixin],
   showNickName:function(){
     this.nndHidden = !this.nndHidden;
     this.show = this.nndHidden ? "show" : "hide";
