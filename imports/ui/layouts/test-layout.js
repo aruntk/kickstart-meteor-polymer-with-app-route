@@ -1,5 +1,3 @@
-import mwcMixin from '../mixin';
-
 Polymer({
   is:"test-layout",
   behaviors:[mwcMixin],
